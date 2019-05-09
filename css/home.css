@@ -1,0 +1,18 @@
+.content-container {
+  height: calc(100vh - 64px);
+  background: url(../images/home.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.content-container .text-container {
+  padding: 145px 60px 0px;
+}
+
+.content-container .text-container h1,
+.content-container .text-container div {
+  text-align: right;
+  color: white;
+}
+
+.content-container .text-container a {
+  color: white;
+}

@@ -1,0 +1,35 @@
+.hero-container {
+  background: url(../images/about.png) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container h1 {
+  color: white;
+  font-size: 64px;
+}
+.content-container .text-container {
+  padding: 60px;
+}
+
+.gallery-container {
+  padding: 20px 60px;
+}
+
+.gallery-container h1 {
+  text-align: center;
+}
+
+.gallery-container .image-container {
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-container .image-container img {
+  height: 250px;
+  width: 250px;
+}
