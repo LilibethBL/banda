@@ -1,18 +1,34 @@
 .content-container {
   height: calc(100vh - 64px);
-  background: url(../images/home.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-.content-container .text-container {
-  padding: 145px 60px 0px;
+  position: relative;
 }
 
-.content-container .text-container h1,
-.content-container .text-container div {
-  text-align: right;
+.content-container .video-container {
+  position: relative;
+}
+
+.content-container .video-container .text-container {
   color: white;
 }
 
-.content-container .text-container a {
-  color: white;
+.content-container .video-container .text-container h1,
+.content-container .video-container .text-container div {
+  margin: 5px 0;
+}
+
+.content-container .video-container .text-container {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content-container .video-container video {
+  object-fit: cover;
 }

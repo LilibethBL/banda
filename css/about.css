@@ -11,12 +11,13 @@
   color: white;
   font-size: 64px;
 }
+
 .content-container .text-container {
-  padding: 50px;
+  padding: 0 40px;
 }
 
 .gallery-container {
-  padding: 50px 100px;
+  padding: 50px;
 }
 
 .gallery-container h1 {

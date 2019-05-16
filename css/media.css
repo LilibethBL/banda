@@ -12,24 +12,25 @@
   font-size: 64px;
 }
 .content-container .text-container {
-  padding: 50px;
+  padding: 10px;
+  text-align: center;
 }
 
 .gallery-container {
-  padding: 50px 100px;
+  padding: 10px 0px;
 }
 
 .gallery-container h1 {
   text-align: center;
 }
 
-.gallery-container .image-container {
-  padding: 20px 70px;
+.gallery-container image-container {
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
 }
 
 .gallery-container .image-container img {
-  height: 250px;
-  width: 250px;
+  height: 251px;
+  width: 336px;
 }
