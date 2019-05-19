@@ -1,7 +1,7 @@
 .hero-container {
-  background: url(../images/about.png) no-repeat center center;
+  background: url(../images/about-1-1.png) no-repeat center center;
   background-size: cover;
-  height: 700px;
+  height: 449px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .gallery-container {
-  padding: 50px;
+  padding: 40px;
 }
 
 .gallery-container h1 {
@@ -25,7 +25,7 @@
 }
 
 .gallery-container .image-container {
-  padding: 20px 70px;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
 }

@@ -1,7 +1,7 @@
 .hero-container {
   background: url(../images/media.jpg) no-repeat center center;
   background-size: cover;
-  height: 700px;
+  height: 449px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,26 +11,48 @@
   color: white;
   font-size: 64px;
 }
-.content-container .text-container {
-  padding: 10px;
+
+h1 {
   text-align: center;
 }
 
+.container {
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+.row {
+  padding-top: -50px;
+  padding-bottom: -50px;
+}
+.column-md-4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-container h1 {
+  color: white;
+  font-size: 64px;
+}
+
+.content-container .text-container {
+  padding: 0 40px;
+}
+
 .gallery-container {
-  padding: 10px 0px;
+  padding: 40px;
 }
 
 .gallery-container h1 {
   text-align: center;
 }
 
-.gallery-container image-container {
-  padding: 10px 10px;
+.gallery-container .image-container {
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
 }
 
 .gallery-container .image-container img {
-  height: 251px;
-  width: 336px;
+  height: 250px;
+  width: 250px;
 }
