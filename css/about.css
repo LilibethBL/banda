@@ -13,15 +13,16 @@
 }
 
 .content-container .text-container {
-  padding: 0 40px;
+  padding: 50px 50px 10px 50px;
 }
 
 .gallery-container {
-  padding: 40px;
+  padding: 2px;
 }
 
-.gallery-container h1 {
+.gallery-container h2 {
   text-align: center;
+  color: #f07d80;
 }
 
 .gallery-container .image-container {
@@ -31,6 +32,6 @@
 }
 
 .gallery-container .image-container img {
-  height: 250px;
-  width: 250px;
+  height: 293px;
+  width: 293px;
 }

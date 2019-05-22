@@ -15,3 +15,13 @@
 .content-container .text-container {
   padding: 0 40px;
 }
+
+.table {
+  font-family: arial, helvetica, sans-serif;
+  width: 100%;
+  color: #blue;
+  font-size: 18px;
+  margin: auto;
+  width: 95%;
+  padding: 30px;
+}

@@ -52,38 +52,168 @@
       <div class="text-container"></div>
     </div>
   </body>
-  <div id="myBtnContainer" class="buttons">
-    <button class="btn filteractive" onclick="filterSelection('all')">
-      show all
-    </button>
-    <button class="btn" onclick="filterSelection('Bottomwear')">kits</button>
-    <button class="btn" onclick="filterSelection('Accessories')">
-      Accessories
-    </button>
-  </div>
-  <footer>
-    <div class="footer-content">
-      <h3>a banda mais bonita da ciudade</h3>
-      <div class="social-links-container">
-        <a href="facebook.png">
-          <img src="images/facebook.png" alt="facebook" />
-        </a>
-        <a href="instagram.png">
-          <img src="images/instagram.png" alt="instagram" />
-        </a>
-        <a href="spotify.png">
-          <img src="images/spotify.png" alt="spotify" />
-        </a>
-        <a href="youtube.png">
-          <img src="images/youtube.png" alt="youtube" />
-        </a>
-      </div>
-      <div class="links-container">
-        <a href="tour.html">tour</a> <a href="music.html">music</a>
-        <a href="media.html">media</a> <a href="about.html">about</a>
-        <a href="shop.html">shop</a>
-      </div>
-      <span>© 2019 a banda mais bonita da ciudade. All rights reserved.</span>
+  <body>
+    <!-- GRIDS -->
+    <div class="container-fluid-1"></div>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('Kits')">Kits</button>
+      <button class="btn" onclick="filterSelection('CDs')">CDs</button>
+      <button class="btn" onclick="filterSelection('accessories')">
+        Accessories
+      </button>
     </div>
-  </footer>
+
+    <div class="merch">
+      <div class="container-fluid">
+        <div class="filterDiv Kits">
+          <a href="productpage_dragon.html"
+            ><img class="img-responsive" src="images/kit-4.png"
+          /></a>
+          <p>Kit ~ Live at Cine Jóia.</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv Kits">
+          <a href="productpage_opart_fall.html"
+            ><img class="img-responsive" src="images/kit-7.png"
+          /></a>
+          <p>Kit ~ From the Top of the World I Saw Time" + Ecobag.</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv Kits">
+          <img class="img-responsive" src="images/kit-5.png" />
+          <p>Kit Collector's Edition</p>
+          <p>$90.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv Kits">
+          <img class="img-responsive" src="images/kit-1.png" />
+          <p>Kit ~ The Most Beautiful Band in the City</p>
+          <p>$40.00</p>
+          <p style="color:#f44336;"><b>Out of Stock</b></p>
+        </div>
+        <div class="filterDiv Kits">
+          <img class="img-responsive" src="images/kit-2.png" />
+          <p>Kit ~ The Happiest of Life</p>
+          <p>$30.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv Kits">
+          <img class="img-responsive" src="images/kit-3.png" />
+          <p>Kit ~ From the Top of the World I Saw Time</p>
+          <p>$35.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv CDs">
+          <img class="img-responsive" src="images/cd-1.png" />
+          <p>The best of life</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv CDs">
+          <img class="img-responsive" src="images/cd-2.png" />
+          <p>A banda Mais Bonita Album</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv CDs">
+          <img class="img-responsive" src="images/cd-3.png" />
+          <p>Congratulations Album</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv accessories">
+          <img class="img-responsive" src="images/shop-4.png" />
+          <p>Keychain</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv accessories">
+          <img class="img-responsive" src="images/shop-3.png" />
+          <p>Mug</p>
+          <p>$25.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv accessories">
+          <img class="img-responsive" src="images/shop-2.png" />
+          <p>t-shirt leaves</p>
+          <p>$15.00 <color="red"></p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+        <div class="filterDiv accessories">
+          <img class="img-responsive" src="images/shop-1.png" />
+          <p>t-shirt</p>
+          <p>$10.00</p>
+          <p style="color:#f44336;">Out of Stock</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--
+      Include all compiled plugins (below), or include individual files as needed
+    -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

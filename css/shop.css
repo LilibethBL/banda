@@ -11,35 +11,11 @@
   color: white;
   font-size: 64px;
 }
-
-.content-container .text-container {
-  padding: 0 40px;
-}
-
-.gallery-container {
-  padding: 50px;
-}
-
-.gallery-container h1 {
-  text-align: center;
-}
-
-.gallery-container .image-container {
-  padding: 20px 70px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.gallery-container .image-container img {
-  height: 250px;
-  width: 250px;
-}
-
 .filterDiv {
-  border: 1px #000000 solid;
+  border: 1px #ffffff solid;
   float: left;
-  color: #ffffff;
-  width: 310px;
+  color: #666666;
+  width: 470px;
   line-height: 10px;
   text-align: center;
   margin: 0px;
@@ -70,7 +46,7 @@
   color: white;
 }
 .container-fluid div {
-  border: 1px #000000 solid;
+  border: 0.3px #fffff solid;
   background-color: white;
 }
 .container-fluid-1 div {
