@@ -73,6 +73,7 @@ a:hover {
 }
 
 footer {
+  width: 100vw;
   background-color: #e5ebdd;
   padding: 25px 0;
 }
